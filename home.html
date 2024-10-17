@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="/Icons\riesgo-biologico.svg" />
+    <title>Manejo de Residuos Peligrosos - Universidad del Quindío</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="https://www.uniquindio.edu.co" target="_blank" rel="noopener noreferrer">
+                    <img src="images\Logo-UQ.png" alt="Logo Universidad del Quindío" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="contencion.html" class="tooltip">PDC<span class="tooltiptext">Protocolos de Contención</span></a></li>
+                    <li><a href="normatividad.html">Normatividad</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="residuos">
+            <h1>Gestión Óptima de los Residuos Peligrosos en la Univeridad del Quindío - RESPEL</h1>
+        </section>
+
+        <section id="contenido">
+            <h2>¿QUIÉNES SOMOS?</h2>
+            <p>Nuestro proyecto de Gestión de Residuos Peligrosos nace de la necesidad crucial de proteger nuestro ambiente y la salud de nuestra comunidad universitaria. Fundado por un equipo multidisciplinario de profesionales comprometidos del Programa
+                de Química, este proyecto es el resultado de años de observación, aprendizaje y un profundo entendimiento de los desafíos ambientales que enfrentamos en nuestras instalaciones educativas.</p>
+            <h2>Compromiso con la Gestión Responsable de Residuos Peligrosos</h2>
+            <p>La gestión de productos peligrosos (RESPEL) es fundamental para garantizar la seguridad ambiental y la salud pública. El manejo adecuado de estos residuos evita la contaminación del suelo, el agua y el aire, protegiendo tanto a las personas
+                como al entorno. En nuestra empresa, nos comprometemos a cumplir con los más altos estándares de recolección, tratamiento y disposición final de residuos peligrosos, asegurando un proceso responsable y sostenible en cada etapa. La correcta
+                gestión de RESPEL no solo es una obligación legal, sino una acción clave para preservar el futuro de nuestro planeta.</p>
+        </section>
+
+        <section id="objetivos">
+            <div class="image-container">
+                <img src="images/Objetivos-RESPEL-UQ.png" alt="Objetivos RESPEL UQ" class="centered-image">
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contacto">
+        © 2024 Creado por Juan Pablo Ramírez Pinilla - contacto juanp.ramirezpinilla@gmail.com - todos los derechos reservados
+    </footer>
+
+    <script>
+        document.querySelector('nav').addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                e.preventDefault();
+                if (e.target.getAttribute('href') === 'home.html') {
+                    window.location.href = 'home.html';
+                } else if (e.target.getAttribute('href') === 'contencion.html') {
+                    window.location.href = 'contencion.html';
+                } else if (e.target.getAttribute('href') === 'normatividad.html') {
+                    window.location.href = 'normatividad.html';
+                } else if (e.target.getAttribute('href') === '#contacto') {
+                    document.querySelector('#contacto').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

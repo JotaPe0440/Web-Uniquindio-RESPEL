@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="/Icons\normas.svg" />
+    <title>Marco Legal RESPEL</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="https://www.uniquindio.edu.co" target="_blank" rel="noopener noreferrer">
+                    <img src="images\Logo-UQ.png" alt="Logo Universidad del Quindío" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="contencion.html" class="tooltip">PDC<span class="tooltiptext">Protocolos de Contención</span></a></li>
+                    <li><a href="normatividad.html">Normatividad</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="normativa">
+            <h1>Normatividad que Regula la Disposición de Residuos Peligrosos</h1>
+        </section>
+
+        <section id="contenido">
+            <h2>Marco Legal RESPEL</h2>
+            <p>En Colombia, la gestión de Residuos Peligrosos (RESPEL) se regula a través de varias normativas que buscan garantizar la correcta gestión, almacenamiento, transporte y disposición final de estos residuos para minimizar riesgos ambientales
+                y a la salud humana. Aquí tienes un resumen de las principales normativas:</p>
+
+            <h2>Ley 99 de 1993</h2>
+            <p>Establece las bases para la gestión ambiental en Colombia, creando el Ministerio de Ambiente y las corporaciones autónomas regionales, que son responsables de la vigilancia y control de la gestión de residuos peligrosos.</p>
+
+            <h2>Decreto 1076 de 2015</h2>
+            <p>Compila la normativa ambiental en un solo documento y, en cuanto a residuos peligrosos, establece las obligaciones para la gestión integral, incluyendo identificación, almacenamiento, transporte, tratamiento y disposición final de los RESPEL.</p>
+
+            <h2>Resolución 1362 de 2007</h2>
+            <p>Regula la implementación de los planes de gestión de residuos o desechos peligrosos (PGP). Obliga a las empresas generadoras de residuos peligrosos a formular y presentar sus planes, detallando las actividades para prevenir, minimizar y manejar
+                estos residuos de manera segura.</p>
+
+            <h2>Decreto 4741 de 2005</h2>
+            <p>Define las disposiciones para la gestión integral de los residuos peligrosos. Establece responsabilidades específicas para generadores, transportadores, y gestores de RESPEL, además de los requisitos para la disposición final en rellenos de
+                seguridad y las sanciones en caso de incumplimiento.</p>
+
+            <h2>Resolución 2184 de 2019</h2>
+            <p>Adopta el sistema globalmente armonizado (SGA) de clasificación y etiquetado de productos químicos, que incluye la identificación de residuos peligrosos. Esto mejora la información sobre los peligros asociados y las medidas de manejo seguro
+                en toda la cadena de gestión de RESPEL.</p>
+
+            <h2>Resolución 155 de 2020</h2>
+            <p>Reglamenta la gestión de aceites usados en Colombia, especificando su almacenamiento, transporte, tratamiento y disposición final para reducir el riesgo ambiental y de salud.</p>
+        </section>
+
+        <div class="centered-title">
+            <h2>¿Quieres Ver toda la Legislación Completa?</h2>
+        </div>
+
+        <div class="centered-button">
+            <button>Click Aquí</button>
+        </div>
+    </main>
+
+    <footer id="contacto">
+        © 2024 Creado por Juan Pablo Ramírez Pinilla - contacto juanp.ramirezpinilla@gmail.com - todos los derechos reservados
+    </footer>
+
+    <script>
+        document.querySelector('nav').addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                e.preventDefault();
+                if (e.target.getAttribute('href') === 'home.html') {
+                    window.location.href = 'home.html';
+                } else if (e.target.getAttribute('href') === 'contencion.html') {
+                    window.location.href = 'contencion.html';
+                } else if (e.target.getAttribute('href') === 'normatividad.html') {
+                    window.location.href = 'normatividad.html';
+                } else if (e.target.getAttribute('href') === '#contacto') {
+                    document.querySelector('#contacto').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

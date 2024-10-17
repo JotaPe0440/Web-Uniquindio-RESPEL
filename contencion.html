@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="/Icons\vendaje-de-la-cabeza-de-la-cara.svg" />
+    <title>Conducto Regular en Accidentes de Laboratorio - Universidad del Quindío</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="https://www.uniquindio.edu.co" target="_blank" rel="noopener noreferrer">
+                    <img src="images\Logo-UQ.png" alt="Logo Universidad del Quindío" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="contencion.html" class="tooltip">PDC<span class="tooltiptext">Protocolos de Contención</span></a></li>
+                    <li><a href="normatividad.html">Normatividad</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contencion">
+            <h1>¿Qué hago en caso de una emergencia?</h1>
+        </section>
+
+        <section id="contenido">
+            <h2>Un Poco de Contexto...</h2>
+            <p>En el mundo de la química y la industria, nos enfrentamos diariamente a sustancias que, si bien son esenciales para nuestro progreso, también pueden representar serios riesgos para nuestra salud y el medio ambiente. Es aquí donde entra en
+                juego RESPEL, un acrónimo que significa Residuos Peligrosos.</p>
+            <div class="centered-title">
+                <h1>¿Qué hacer?</h1>
+            </div>
+            <h2>En Caso de un Vidrio Roto</h2>
+            <h3>Protocolo:</h3>
+            <ol>
+                <li>Mantén la calma.</li>
+                <li>No toques ni intentes limpiar el vidrio roto.</li>
+                <li>Alerta a tus compañeros cercanos del insidente.</li>
+                <li>Aléjate del área con cuidado.</li>
+                <li>Informa de inmediato al técnico encargado.</li>
+                <li>Espera indicaciones antes de regresar.</li>
+            </ol>
+            <br>
+            <h2>En caso de un Derrame de Residuo</h2>
+            <h3>Protocolo:</h3>
+            <ol>
+                <li>Mantén la calma.</li>
+                <li>No toques ni inhales el residuo.</li>
+                <li>Despeja el área y evacuen el sitio.</li>
+                <li>Comunica al técnico de laboratorio inmediatamente.</li>
+                <li>Acata las recomendaciones del técnico antes de regresar.</li>
+            </ol>
+            <br>
+            <h2>En caso de un Vidrio Roto Impregnado</h2>
+            <h3>Protocolo:</h3>
+            <ol>
+                <li>Mantén la calma.</li>
+                <li>No tocar el vidrio diréctamente aunque parezca seco.</li>
+                <li>Aislar el área con el fin de que otros no entren en contracto.</li>
+                <li>Notificar al técnico encargado lo antes posible.</li>
+                <li>Aguarda a que sea seguro regrsar al sitio.</li>
+            </ol>
+            <br>
+            <h2>En caso de un derrame de mercurio</h2>
+            <h3>Protocolo:</h3>
+            <ol>
+                <li>Mantén la calma.</li>
+                <li>No toques ni intentes recoger el mercurio.</li>
+                <li>Evacua el área en caso de un derrame considerable.</li>
+                <li>Reporta rápidamente al tecnico de laboratorio.</li>
+                <li>Espera a que el personal encargado disponga correctamente del derrame.</li>
+
+            </ol>
+            <br>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        © 2024 Creado por Juan Pablo Ramírez Pinilla - contacto juanp.ramirezpinilla@gmail.com - todos los derechos reservados
+    </footer>
+
+    <script>
+        document.querySelector('nav').addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                e.preventDefault();
+                if (e.target.getAttribute('href') === 'home.html') {
+                    window.location.href = 'home.html';
+                } else if (e.target.getAttribute('href') === 'contencion.html') {
+                    window.location.href = 'contencion.html';
+                } else if (e.target.getAttribute('href') === 'normatividad.html') {
+                    window.location.href = 'normatividad.html';
+                } else if (e.target.getAttribute('href') === '#contacto') {
+                    document.querySelector('#contacto').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
