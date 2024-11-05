@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/svg+xml" href="/Icons\normas.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Icons\riesgo-biologico.svg" />
     <title>Marco Legal RESPEL</title>
 </head>
 
@@ -73,24 +73,6 @@
         © 2024 Creado por Juan Pablo Ramírez Pinilla - contacto juanp.ramirezpinilla@gmail.com - todos los derechos reservados
     </footer>
 
-    <script>
-        document.querySelector('nav').addEventListener('click', function(e) {
-            if (e.target.tagName === 'A') {
-                e.preventDefault();
-                if (e.target.getAttribute('href') === 'home.html') {
-                    window.location.href = 'home.html';
-                } else if (e.target.getAttribute('href') === 'contencion.html') {
-                    window.location.href = 'contencion.html';
-                } else if (e.target.getAttribute('href') === 'normatividad.html') {
-                    window.location.href = 'normatividad.html';
-                } else if (e.target.getAttribute('href') === '#contacto') {
-                    document.querySelector('#contacto').scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            }
-        });
-    </script>
 </body>
 
 </html>
